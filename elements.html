@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function user(){
+			var userName=document.getElementById("username").value
+			/*var textData=document.getElementsByClassName("para")
+			console.log(textData.length)
+			for(var i=0;i<textData.length;i++){
+				console.log(textData[i].innerHTML)
+			}
+			var listOfful=document.getElementsByTagName("li")
+			for(var l=0;l<listOfful.length;l++){
+				console.log(listOfful[l].innerHTML)
+			}*/
+			document.getElementById("chinna").innerHTML=userName
+		}
+	</script>
+</head>
+<body>
+	<input id="username"/>
+	<!--<p class="para">Hoe Are You</p>
+	<p class="para">I am feeling good</p>
+	<h1 class="para">Your eyes look different today</h1>
+	<ul>
+		<li>Chinna</li>
+		<li>Pandu</li>
+		<li>Chitti</li>
+		<li>Cutiepie</li>
+		<li>Laddu</li>
+	</ul>-->
+	<h1>Name is:<span id="chinna">I am unique</span></h1>
+	<button onclick="user()">Submit</button>
+
+</body>
+</html>
