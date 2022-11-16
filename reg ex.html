@@ -11,7 +11,7 @@
 			var email=document.getElementById("mail").value;
 			var firstNameCheck=/^[a-zA-Z ]+$/
 			var mobileCheck=/^[0-9]{10}$/
-			var mailCheck=/^[a-zA-Z0-9]$/
+			var emailCheck=/^[a-zA-Z0-9.#_]+@[a-z]+\.[a-z]{2,3}$/
 			if (firstName==""||firstName.length<3){
 				alert("Please check your name")
 				return false
@@ -28,8 +28,12 @@
 				alert("Mobile number must carry 10 digits")
 				return false
 			}
-			if (!email.match(emailCheck)){
+			if(email==""){
 				alert("Please check your email")
+				return false
+			}
+			if (!email.match(emailCheck)){
+				alert("email id is not valid")
 				return false
 			}
 			return true
